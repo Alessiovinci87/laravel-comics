@@ -1,17 +1,38 @@
-@extends('layouts.main')
+<!DOCTYPE html>
+<html lang="en">
+@extends('layout.main-template')
 
-@section('page-title', 'Homepage')
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    @section('title', 'Home');
 
-{{-- @section('page-title')
-Homepage
-@endsection --}}
+    @vite('resources/js/app.js')
+    <title>Laravel Comics</title>
+    @section('content')
 
-@section('main-content')
-<h1>
-    Homepage
-</h1>
+    </head>
 
-<div class="gatto"></div>
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/free-vector/comic-style-wallpaper_79603-1248.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
 
-<img src="{{ Vite::asset('resources/img/gatto.jpg') }}" class="img-fluid" alt="">
+
+    <body>
+        <div class="container-img">
+
+
+        </div>
+    </body>
+
+    </html>
+
+
+
 @endsection
